@@ -1,0 +1,90 @@
+ISO-OSI: Co je ISO-OSI?
+ISO-OSI: Jaké jsou vrstvy ISO-OSI?
+ISO-OSI: Jak se rozlišuje přenos na Fyzické vrstvě?
+ISO-OSI: Jaké jsou hlavní úkoly Spojové vrstvy?
+ISO-OSI: Co dělá Síťová vrstva?
+ISO-OSI: Co dělá Transportní vrstva?
+ISO-OSI: Co může zajišťovat Relační vrstva?
+ISO-OSI: Co dělá Prezentační vrstva?
+ISO-OSI: Co je Aplikační vrstva?
+CRC: Jak může vzniknout chyba v datovém přenosu?
+CRC: Definuj Hammingovu vzdálenost(kódu d)
+CRC: Co je kódové slovo?
+CRC: Kdy mužeme opravit chybu pomocí CRC?
+CRC: Co je CRC?
+CRC: Jaké chyby lze detekovat s CRC?
+Metalická přenosová cesta: Jaké jsou primární a sekundární parametry metalického vedení a jak spolu souvisí?
+Metalická přenosová cesta: Kdy se musime dívat na metalický spoj jako na vedení? Jaká je významná hranice u číslicových signálů?
+Metalická přenosová cesta: Jak se počítá hodnota napětí ve vedení v zavislosti s časem?
+Metalická přenosová cesta: Z čeho se skládá koaxiální drát?
+Metalická přenosová cesta: Porovnej koaxiální kabely s kroucenou dvojlinkou
+Metalická přenosová cesta: Jaký je význam kroucení vodičů u kroucené dvojlinky?
+Metalická přenosová cesta: Co stoupá společně s prodlužováním nějáké dvojce vodičů?
+Optická přenosová cesta: Jak se počítá index lomu?
+Optická přenosová cesta: Co popisuje Snellův zákon? Diagram
+Optická přenosová cesta: Co je Brewsterův úhel?
+Optická přenosová cesta: Co je numericá aperatura a jak se počítá?
+Optická přenosová cesta: Popiš vlastnosti optických vláken
+Optická přenosová cesta: Jaké vlnové délky světla se používají v optických vláknech?
+Bezdrátová přenosová cesta: Popiš vlastnosti Infračervené komunikace
+Bezdrátová přenosová cesta: Popiš vlastnosti Laserové komunikace
+Bezdrátová přenosová cesta: popiš vlastnosti Rádiové komunikace v závislosti s frekvencí
+Bezdrátová přenosová cesta: Kdo a jak reguluje rádiovou komunikaci?
+Protokoly: Jaké vrstvy má TCP-IP?
+Protokoly: Jaké casty(cast) obsahuje IP?
+Protokoly: Co je IP maska?
+Protokoly: Co je Classles InterDomain Routing?
+Protokoly: Vyjmenuj pár vyhrazených IPv4 adres
+Protokoly: Co je NA(P)T - Network Adress(Port) Translation?
+Protokoly: Co je ARP - Protokol Adress Resolution Protocol?
+Protokoly: Jak se může aktualizovat ARP cache?
+Protokoly: Co je ICMP - Internet Control Message Protocol?
+Protokoly: Jaké typy informací může například ICMP komunikovat?
+Protokoly: Co je NDP - Neighbor Discovery Protocol?
+Porty a Sockety: Co je Port?
+Porty a Sockety: Co je Socket?
+Protokoly: Přidává UDP - User Datagram Protocol nějákou hodnotu k datům?
+Protokoly: Co garantuje TCP - Transmition Control Protocol?
+Protokoly: Jak se vytvoří a zruší TCP spojení?
+Protokoly: Jak funguje TCP Congestion Control?
+Protokoly: Co dělá DHCP - Dynamic Host Configuration Protocol?
+Protokoly: Co dělá DNS - Domain Name System?
+Protokoly: Jaké druhy serverů má DNS?
+Protokoly: Jak jsou sestavené DNS servery, aby nemuselo všechno být na jednom?
+Protokoly: Jakým způsobem zjistí DNS server IP adresu?
+Protokoly: Může DNS nabízet in jiné data než jen IP?
+Zabezpečení: Co je prefixový kód?
+Zabezpečení: Řekněte něco o šifrování?
+Zabezpečení: Co je hashování?
+Zabezpečení: Co by měl zajišťovat Digitální podpis?
+Přenos signálu: Jak vypočítáme maximální informační kapacitu sginálu v závislosti na frekvenci signálu a kvantování signálu?
+Přenos signálu: Jaké jsou nejčastější kódování signálu (NRZ,RZ...)?
+Přenos signálu: Co mají společného AWGN, BSC a Gilbert-Elliot?
+Modulace: Jaké existujou druhy modulace signálu?
+Modulace: Co jsou BPSK, QPSK a 8-PSK?
+Modulace: Jakých vlastností dosáhneme přidáním pseudonáhodné modulace k signálu?
+Datový přenos: Jak můžeme dělit datový přenos?
+Datový přenos: Co představuje přeložené-posunuté pásmo, proč se používá?
+Datový přenos: Vysvětli Frekvenční multiplexování fyzického kanálu
+Datový přenos: Vysvětli Časové multiplexování fyzického kanálu
+Datový přenos: Vysvětli Kódové multiplexování fyzického kanálu
+Datový přenos: Jaké jsou topologie fyzické vrstvy?
+Datový přenos: Jaké jsou deterministické způsoby řízení přístupu ke sdílenému médiu?
+Datový přenos: Jaké jsou stochastické způsoby řízení přístupu ke sdílenému médiu?
+Datový přenos: Co je spolehlivý služba datového přenosu?
+Datový přenos: Jak můžeme docílit FEC - Forward Error Correction a kde se používá?
+ARQ: Co je ARQ - Automatic Repeat reQuest?
+ARQ: Jak funguje Stop and Wait ARQ?
+ARQ: Jak funguje Go-Back-N ARQ?
+ARQ: Jak funguje Selective Repeat ARQ?
+Propojování sítě: Jak funguje Opakovač?
+Propojování sítě: Jak funguje Switch?
+Propojování sítě: Jak funguje Router?
+Propojování sítě: Jak funguje Gateway?
+Propojování sítě: Jak se má chovat propojovací prvek v ohledu k vrstvám kolem jeho funkční vrstvy?
+Propojování sítě: Jaký je rozdíl mezi vztahem Klient-Server a Producent-Konzument?
+Ethernet: Jak funguje algoritmus Spanning Tree a proč se používá?
+Ethernet: Co je a VLAN?
+WiFi: Jaké jsou výhody a nevýhody WiFi?
+WiFi: Ad-hoc sítě vs Stacionární sítě
+WiFi: Jak se řeší případ kdy jsou data delší než maximální délka datového pole MAC rámce?
