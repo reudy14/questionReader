@@ -1,0 +1,43 @@
+LAG: Co je báze?
+LAG: Co je image?
+LAG: Jak spoitam projekci vektoru na jiny?
+LAG: Co je monomorfismus?
+LAG: Co je epimorphismus?
+DMA: Vlastnosti delitelnosti : a | b ^ b != 0 => a <= b
+DMA: Co znamena ze je cislo kongruentni?
+DMA: Kdy ma cislo inversni v mod n : gcd(x, n) == 1
+DMA: Euqliduv algoritmus 1751, 228 : 1 = -25*1751 + 192*228
+DMA: Jak se pocita inversni cislo v mod n : Rozsireny rukliduv algoritmus 192 * 228 mod 1751
+DMA: Proc funguje eukliduv algoritmus? : gcd(a, b) = gcd(b, r)
+DMA: Co je bezoutova identita cisla x? : x = A*a + B*b
+DMA: Co je binarni relace? : podle nejakeho pravidla jestli jsou dva objekty v relaci 
+DMA: Reflexivita binarni relace : Pro vsechny a plati ze aRa
+DMA: Symetrie binarni relace : Jestlize aRb => bRa
+DMA: Antisymetrie binarni relace : Jestlize aRb ^ bRa => a = b
+DMA: Transitivita binarni relace : Jestlize aRb ^ bRc => aRc
+DMA: Jaky je slaby princip indukce? : Jestlize V(x0) == True ^ V(xn) => V(xn+1), pak V == True
+DMA: Jaky je silny princip indukce? : Jestlize V(x0) == True ^ V(x0) ... V(xn) => Vn+1, pak V == True
+DMA: Jake jsou vlastnosti homogenních lineárních rekurentních rovnic: Jejich množina řešení tvoří vektorový prostor dimenze rovné řádu rovnice
+DMA: Jak se nachazi baze vektoroveho prostoru vytvoren homogeni linearni rekurentni rovnici : koreny charakteristickeho polynomu (λ; n * λ^n; n^m * λ^n | m je nasobnost) pro kazdy koren λ
+PRP: Vysvetlit rizeny tok programovani : if - for
+PRP: Co dela linkovani : spoji vsechny nazvy funkci s jejim realnym kodem
+PRP: Jak fungue #incluede : Preprocessor Nalepi vsechny cody k sobe aby davali smysl
+PRP: Path of gcc : preprocess .h.c -> compilation .o -> linking .o -> machine code .exe
+PRP: Jake (ne)vyhody maji alokace na stacku/heapu? : stack(+rychlost, bezpecnost-kapacita) heap(+kapacita, dynamicnost -rychlost)
+PRP: Co je fragmentace pameti : 4kb se nevejde do (f1kb u1kb f3kb)
+PRP: Co je unik v pameti : memory leak, forgetting to free something
+PRP: Jake jsou abstraktni datove typy : heap, ring buffer, tree, hashtable, set, stack, string
+PRP: Jak se resi colize u hashtable : list at hash location  
+MA: Co je Definicni obor a obor hodnot : Df(pro jake hodnoty je funkce definovana) Hf(Jake hodnoty muzou z funkce nastat)
+MA: Jak je definovana limita v a podle epsilon a delty? : jestliže k libovolnému ε>0 existuje takové δ>0 že pro všechna x ∈ Df taková, že |x − a| < δ, pak x leží v prstencovém okolí bodu a platí |f(x) − A| < ε
+MA: Kdy je funkce spojita? : kdyz lim x->a f(x) == f(a) pro vsechny x
+MA: Definice derivace : tan uhlu od osy x, lim(h->0)(f(a+h)-f(a)/h)
+MA: Jak se derivuje funkce f delici druhou funkci g : f'(x)g(x) - f(x)g'(x) / g(x)^2
+MA: Jak se deriouje slozeni funkci f(g(x)) : g'(x)f'(g(x))
+MA: Co rika L'Hospitalovo pravidlo : lim(x->a) f(x)/g(x) = lim(x->a) f'(x)/g'(x)
+MA: Jaka je definice taylerovo polynomu řádu 3: f(a) + f'(a)(x - a) + f''(a)(x - a)^2 / 2! + f'''(a)(x - a)^3 / 3!
+MA: Jaka jsou definovany integraly : plocha pod krivkou funkce
+MA: Jak funguje substituce u integralu? : substituju cast a vydelim celek derivaci substituce
+MA: Jak funguje per-partes u integralu? : int f(x)g'(x) = f(x)g(x) - int f'(x)g(x)
+MA: Dva zpusoby testu konvergence rady : an+1/an < 1 | lim(x->inf)root(n, abs(an)) < 1
+MA: Jaka je nutna podminka konvergence : lim(n->inf) an == 0
