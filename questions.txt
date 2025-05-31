@@ -3,7 +3,7 @@ LAG: Co je image?
 LAG: Jak spoitam projekci vektoru na jiny?
 LAG: Co je monomorfismus?
 LAG: Co je epimorphismus?
-DMA: Vlastnosti delitelnosti : a | b ^ b != 0 => a <= b
+DMA: Vlastnosti delitelnosti : a | b ^ b != 0 => a <= b, tranzitivni
 DMA: Co znamena ze je cislo kongruentni?
 DMA: Kdy ma cislo inversni v mod n : gcd(x, n) == 1
 DMA: Euqliduv algoritmus 1751, 228 : 1 = -25*1751 + 192*228
@@ -28,16 +28,45 @@ PRP: Co je fragmentace pameti : 4kb se nevejde do (f1kb u1kb f3kb)
 PRP: Co je unik v pameti : memory leak, forgetting to free something
 PRP: Jake jsou abstraktni datove typy : heap, ring buffer, tree, hashtable, set, stack, string
 PRP: Jak se resi colize u hashtable : list at hash location  
-MA: Co je Definicni obor a obor hodnot : Df(pro jake hodnoty je funkce definovana) Hf(Jake hodnoty muzou z funkce nastat)
-MA: Jak je definovana limita v a podle epsilon a delty? : jestliže k libovolnému ε>0 existuje takové δ>0 že pro všechna x ∈ Df taková, že |x − a| < δ, pak x leží v prstencovém okolí bodu a platí |f(x) − A| < ε
-MA: Kdy je funkce spojita? : kdyz lim x->a f(x) == f(a) pro vsechny x
-MA: Definice derivace : tan uhlu od osy x, lim(h->0)(f(a+h)-f(a)/h)
-MA: Jak se derivuje funkce f delici druhou funkci g : f'(x)g(x) - f(x)g'(x) / g(x)^2
-MA: Jak se deriouje slozeni funkci f(g(x)) : g'(x)f'(g(x))
-MA: Co rika L'Hospitalovo pravidlo : lim(x->a) f(x)/g(x) = lim(x->a) f'(x)/g'(x)
-MA: Jaka je definice taylerovo polynomu řádu 3: f(a) + f'(a)(x - a) + f''(a)(x - a)^2 / 2! + f'''(a)(x - a)^3 / 3!
-MA: Jaka jsou definovany integraly : plocha pod krivkou funkce
-MA: Jak funguje substituce u integralu? : substituju cast a vydelim celek derivaci substituce
-MA: Jak funguje per-partes u integralu? : int f(x)g'(x) = f(x)g(x) - int f'(x)g(x)
-MA: Dva zpusoby testu konvergence rady : an+1/an < 1 | lim(x->inf)root(n, abs(an)) < 1
-MA: Jaka je nutna podminka konvergence : lim(n->inf) an == 0
+MA1: Co je Definicni obor a obor hodnot : Df(pro jake hodnoty je funkce definovana) Hf(Jake hodnoty muzou z funkce nastat)
+MA1: Jak je definovana limita v a podle epsilon a delty? : jestliže k libovolnému ε>0 existuje takové δ>0 že pro všechna x ∈ Df taková, že |x − a| < δ, pak x leží v prstencovém okolí bodu a platí |f(x) − A| < ε
+MA1: Kdy je funkce spojita? : kdyz lim x->a f(x) == f(a) pro vsechny x
+MA1: Definice derivace : tan uhlu od osy x, lim(h->0)(f(a+h)-f(a)/h)
+MA1: Jak se derivuje funkce f delici druhou funkci g : f'(x)g(x) - f(x)g'(x) / g(x)^2
+MA1: Jak se derivuje slozeni funkci f(g(x)) : g'(x)f'(g(x))
+MA1: Co rika L'Hospitalovo pravidlo : lim(x->a) f(x)/g(x) = lim(x->a) f'(x)/g'(x)
+MA1: Jaka je definice taylerovo polynomu řádu 3: f(a) + f'(a)(x - a) + f''(a)(x - a)^2 / 2! + f'''(a)(x - a)^3 / 3!
+MA1: Jaka jsou definovany integraly : plocha pod krivkou funkce
+MA1: Jak funguje substituce u integralu? : substituju cast a vydelim celek derivaci substituce
+MA1: Jak funguje per-partes u integralu? : int f(x)g'(x) = f(x)g(x) - int f'(x)g(x)
+MA1: Dva zpusoby testu konvergence rady : an+1/an < 1 | lim(x->inf)root(n, abs(an)) < 1
+MA1: Jaka je nutna podminka konvergence : lim(n->inf) an == 0
+LGR: Jak se dosahne ohodnoceni logicke formule? : pravdivostni ohodnoceni u(a) = 0/1
+LGR: Co jsou tautologie a kontradikce : tautologie(je pravdiva ve vsech ohodnocenich), kontradickec(neni pravdiva pro vsechny ohodnoceni)
+LGR: Co je DNF? : Disjuntni normalova formule (a v b) ^ (c v d)
+LGR: Co je CNF? : Konjunktivni normalova formule (a ^ b) v (c ^ d)
+LGR: Jak dosahneme semantickeho dusledku mnoziny formuli? : Jako implikace S |= ϕ
+LGR: Co je prirozena dedukce? : Takovy ty tabulky kde vyuzivas formuli co znas abys dosahl neceho(eliminaci a zavedeni logickych spojek)
+LGR: Kdy jsou si dve logicke formule ekvivalentni |=|? : kdyz jejich celky maji stejne pravdivostni ohodnoceni pro vsechne pravdivostni ohodnoceni
+LGR: Jak napíšu v predikátové logice "všichni psi maji radi alespon jednoho člověka"? : Vx (pes(x) -> Ey (clovek(y) -> rad(x, y)))
+LGR: Jake jsou termy v predikatove logice? : kombinace Var, Pred, Func, Kons bez spojek
+LGR: Jak se dokaze ze neco plati sporem v vyrokove logice : [formule -> spor e¬(tt/ff)] -> ¬formule i¬block 
+LGR: Jak se zbavim ∀ a ∃ pri pocitani semantickeho dusledku formuli? : ∀(1. ∀xP(x) 2. x0 D 3. P(x0) e∀1) --- ∃(1. ∃xP(x) 2. ∀xQ(x) [3. x0:P(x0) W 4. Q(x0) e∀2 5. P(x0)∧Q(x0) i∧3,4 6. ∃xP(x)∧Q(x) i∃5] 7. ∃xP(x)∧Q(x) e∃1,3-6)
+LGR: Jak se nazyva graf kde kazdy vechol ma stejny stupen? : r-regularni
+LGR: Co je faktor grafu : kdyz podgraf obsahuje vsechny vrcholy
+LGR: kdy jsou dva grafy isomorfni? : Kdyz existuje Bijekce V1 -> V2
+LGR: kdy je graf souvisly : kdyz mezi kazdymi dvemi vrcholy existuje cesta
+LGR: jak se da vypocitat pocet hran pro strom? : |E| = |V| - 1
+LGR: Jaky je obecny algoritmus pro hledani minimalni kostry : zacnu s jednovrocholovymi komponenty, dokud nespojim vsechny komponenty: vyberu dve a spojim je nejlevnejsi hranou(tu si savenu)
+LGR: Jak se lisi boruvkuv algoritmus hledani min kostry proti obecnemu? : iteruje po serazenych hranach a chekuje jestli spojuje komponenty misto iterovani po komponentach a hledani minimalni hrany
+LGR: Jak se lisi Jarnikuv algoritmus od obecneho? : zvetsuje jen jednu komponentu souvislosti o nejlevnejsi hranu ktera z ni trci
+LGR: Cim se vyznacuje Eulerovsky graf? : souvisly a kazdy vrchol ma sudy stupen(orientovane din = dout), da se projit tahem bez pouziti hrany vice nez jednou
+LGR: Jak se daji najit silne souvisle komponenty : komponenty kde mezi kazdym parem vrcholu existuje orientovana cesta, dela se to BFS, nebo DFS 
+PJV: Jaky je rozdil mezi abstraktni classou a interfacem : interface resi definice metody(no body), vsechno musim byt static, abstract je classa ktery nejde vytvorit instance
+PJV: Co je imutabilita? : nemenost 
+PJV: Co je genericka trida? : pri vytvareni metody/class, muzu rict jaky typ class tam muze jit(iterable treba, nebo neco dedici moji abstraktni classu/interface)
+PJV: Jake jsou typy vyjimek? : Runtime(dividing with 0, out ouf bounds), Exceptions(standard), Errors(JVM error)
+PJV: Jak prekopiruju soubor do jineho, koncici nejakym znakem : vytvorim FileInputStream in a FileOutputStream out while true { b = in.read(); if b == -1 break; out.write(b) }
+PJV: Jake jsou zpusoby synchronizace vice vlaken? : synchronized(critical section), komunikaci wait, notifyAll
+PJV: Jak muzu zastavit vlakno z venci? : volatilnim booleanem stop
+PJV: Co je ve multithreadingu problem soubehu a blockovani? : soubeh(informace nejsou dobre synchronizovany, muze dojit k prepsani), blockovani(dve vlakna cekaji na sebe navzajem)
