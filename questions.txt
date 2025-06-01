@@ -70,3 +70,14 @@ PJV: Jak prekopiruju soubor do jineho, koncici nejakym znakem : vytvorim FileInp
 PJV: Jake jsou zpusoby synchronizace vice vlaken? : synchronized(critical section), komunikaci wait, notifyAll
 PJV: Jak muzu zastavit vlakno z venci? : volatilnim booleanem stop
 PJV: Co je ve multithreadingu problem soubehu a blockovani? : soubeh(informace nejsou dobre synchronizovany, muze dojit k prepsani), blockovani(dve vlakna cekaji na sebe navzajem)
+APO: Jak josu representovana realna cisla v pocitacich : Sign(1)Exponent(8)Mantisa(23); (-1)^S * 1.M * 2^(E-127)
+APO: Jaka je presnost floatu pro maximalni cislo a nejmensi cislo? : Max(2^128-2^104) Min(2^-126)
+APO: Jake jsou registy? : Program counter, Instruction register, General purpose, Stack pointer
+APO: Jaky jsou rozdily mezi CISC a RISC : CISC(mensi programy, multi cycle instrukce, ktery toho zvladnou vic), RISC(Vetsi operace, rychlejsi decode, instrukce na jeden cyklus)
+APO: Jak jsou formatovane RISC CPU instrukce : maji 7 bit opcode podle ktereho se pozna jaky typ to je a kde jsou jednotlive casti napr. imediate, rs/d/t , funct3/7
+APO: Jake operace provadi zretezeny(pipelined) processor paralelne? : Instruction Fetch, Instruction Decode, EXecute, MEMory, Write Back
+APO: Jake problemy vznikaji pri pipeliningu? : instruction dependancy, resi se stall, nebo forwarding
+APO: Jake jsou zpusoby predikce skoku? : x-bit predictor(historie skoku), correlated(pouziva jiny prediktor jestli se pred tim skocilo), tournament(vybira mezi dvouma prediktorama(globalni a lokalni))
+APO: Jak se přiřadí prediktor k instrukci? : podle malych bitu, ano jine instrukce maji vlastni prediktor
+APO: Jaky je rozdil mezi plne asociativni cachi a n-cestnou? : n cestna ma nekolik setu  velikosti n line, kde adressa urcuje do jakeho setu muze data jit, plne asociativni ma jen jeden set. cim vetsi set tim mensi pravdepodobnost miss ale pomalejsi vyhledavani
+APO: Jak muzeme categorizovar kabely? : seriove/paralelni, full/half-duplex
